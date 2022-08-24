@@ -8,13 +8,12 @@ function sizeChange() {
     counter++;
 
     if (flag) {
-        flag = false;
         image.width += 50;
     }
     else {
-        flag = true;
         image.width -= 50;
-    }
+    };
+    flag = !flag;
     document.getElementById('clicker__counter').textContent = counter + '\n' + 'Средняя скорость клика: ' + ((clickTimer - timer) / 1000).toFixed(2) + ' сек.';
 }
 
