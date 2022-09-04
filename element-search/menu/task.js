@@ -9,7 +9,7 @@ for (const i in links) {
             event.preventDefault();
         }
 
-        if (subMenuItem === activeMenu) {
+        if (subMenuItem === activeMenu && activeMenu) {
             activeMenu.classList.remove('menu_active');
             return;
         }
